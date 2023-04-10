@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager_firebase/ui/utils/app_colors.dart';
-import 'package:task_manager_firebase/ui/widgets/home_screen_button.dart';
+import 'package:task_manager_firebase/ui/widgets/button_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(
               height: MediaQuery.of(context).size.height / 2.5,
             ),
-            const HomeScreenButton(
+            const ButtonWidget(
               backgroundColor: AppColors.mainColor,
               text: 'Add Task',
               textColor: Colors.white,
@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(
               height: 20,
             ),
-            const HomeScreenButton(
+            const ButtonWidget(
               backgroundColor: Colors.white,
               text: 'View All',
               textColor: AppColors.smallTextColor,

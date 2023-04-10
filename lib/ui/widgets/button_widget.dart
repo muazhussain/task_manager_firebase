@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class HomeScreenButton extends StatelessWidget {
+class ButtonWidget extends StatelessWidget {
   final Color backgroundColor;
   final String text;
   final Color textColor;
-  const HomeScreenButton({
+  const ButtonWidget({
     super.key,
     required this.backgroundColor,
     required this.text,

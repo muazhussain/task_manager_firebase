@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager_firebase/ui/screens/home_screen.dart';
 
 void main(List<String> args) {
   runApp(const TaskManagerApp());
@@ -15,7 +16,7 @@ class TaskManagerApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: null,
+      home: const HomeScreen(),
     );
   }
 }

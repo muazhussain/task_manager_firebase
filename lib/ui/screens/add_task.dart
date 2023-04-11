@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager_firebase/ui/utils/app_colors.dart';
+import 'package:task_manager_firebase/ui/widgets/back_icon_button.dart';
 import 'package:task_manager_firebase/ui/widgets/button_widget.dart';
 import 'package:task_manager_firebase/ui/widgets/text_field_widget.dart';
 
@@ -28,13 +29,12 @@ class AddTask extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            SafeArea(
-              child: IconButton(
+            Container(
+              padding: const EdgeInsets.only(
+                top: 60,
+              ),
+              child: BackIconButton(
                 onPressed: () {},
-                icon: const Icon(
-                  Icons.arrow_back_ios_new_rounded,
-                  color: AppColors.secondaryColor,
-                ),
               ),
             ),
             Column(
@@ -64,7 +64,7 @@ class AddTask extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 6,
+              height: MediaQuery.of(context).size.height / 10,
             ),
           ],
         ),

@@ -7,4 +7,7 @@ class AppColors {
   static const textHolder = Color(0xFFEDF0F8);
   static const textGrey = Color(0xFFAFB1B5);
   static const taskBackground = Color(0xFFEDF0F8);
+  static const dismissableLeftColor = Color(0xFF2E3253);
+  static const dismissableRightColor = Color(0xFFFF5252);
+  static const bottomSheetColor = Color(0xFF2E3253);
 }

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:task_manager_firebase/ui/screens/add_task.dart';
+import 'package:task_manager_firebase/ui/screens/all_tasks.dart';
 import 'package:task_manager_firebase/ui/utils/app_colors.dart';
 import 'package:task_manager_firebase/ui/widgets/button_widget.dart';
 
@@ -53,18 +56,36 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(
               height: MediaQuery.of(context).size.height / 2.5,
             ),
-            const ButtonWidget(
+            ButtonWidget(
               backgroundColor: AppColors.mainColor,
               text: 'Add Task',
               textColor: Colors.white,
+              onTap: () {
+                Get.to(
+                  () => const AddTask(),
+                  transition: Transition.zoom,
+                  duration: const Duration(
+                    milliseconds: 500,
+                  ),
+                );
+              },
             ),
             const SizedBox(
               height: 20,
             ),
-            const ButtonWidget(
+            ButtonWidget(
               backgroundColor: Colors.white,
               text: 'View All',
               textColor: AppColors.smallTextColor,
+              onTap: () {
+                Get.to(
+                  () => const AllTasks(),
+                  transition: Transition.downToUp,
+                  duration: const Duration(
+                    milliseconds: 500,
+                  ),
+                );
+              },
             ),
           ],
         ),

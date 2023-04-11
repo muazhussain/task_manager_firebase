@@ -33,9 +33,7 @@ class AddTask extends StatelessWidget {
               padding: const EdgeInsets.only(
                 top: 60,
               ),
-              child: BackIconButton(
-                onPressed: () {},
-              ),
+              child: const BackIconButton(),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,10 +54,11 @@ class AddTask extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const ButtonWidget(
+                ButtonWidget(
                   backgroundColor: AppColors.mainColor,
                   text: 'Add',
                   textColor: Colors.white,
+                  onTap: () {},
                 ),
               ],
             ),
